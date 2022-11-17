@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kewin\\source\\repos\\KinoApi\\KinoApi\\KinoApi.csproj": {}
+    "C:\\Users\\Kewin\\Source\\Repos\\KinoApi\\KinoApi\\KinoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kewin\\source\\repos\\KinoApi\\KinoApi\\KinoApi.csproj": {
+    "C:\\Users\\Kewin\\Source\\Repos\\KinoApi\\KinoApi\\KinoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kewin\\source\\repos\\KinoApi\\KinoApi\\KinoApi.csproj",
+        "projectUniqueName": "C:\\Users\\Kewin\\Source\\Repos\\KinoApi\\KinoApi\\KinoApi.csproj",
         "projectName": "KinoApi",
-        "projectPath": "C:\\Users\\Kewin\\source\\repos\\KinoApi\\KinoApi\\KinoApi.csproj",
+        "projectPath": "C:\\Users\\Kewin\\Source\\Repos\\KinoApi\\KinoApi\\KinoApi.csproj",
         "packagesPath": "C:\\Users\\Kewin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kewin\\source\\repos\\KinoApi\\KinoApi\\obj\\",
+        "outputPath": "C:\\Users\\Kewin\\Source\\Repos\\KinoApi\\KinoApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\VisualStudioShared\\NuGetPackages"
@@ -43,6 +43,38 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.1.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
