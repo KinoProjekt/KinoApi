@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kewin\\Source\\Repos\\KinoApi\\KinoApi\\KinoApi.csproj": {}
+    "C:\\Users\\Kewin\\source\\repos\\KinoApi\\KinoApi\\KinoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kewin\\Source\\Repos\\KinoApi\\KinoApi\\KinoApi.csproj": {
+    "C:\\Users\\Kewin\\source\\repos\\KinoApi\\KinoApi\\KinoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kewin\\Source\\Repos\\KinoApi\\KinoApi\\KinoApi.csproj",
+        "projectUniqueName": "C:\\Users\\Kewin\\source\\repos\\KinoApi\\KinoApi\\KinoApi.csproj",
         "projectName": "KinoApi",
-        "projectPath": "C:\\Users\\Kewin\\Source\\Repos\\KinoApi\\KinoApi\\KinoApi.csproj",
+        "projectPath": "C:\\Users\\Kewin\\source\\repos\\KinoApi\\KinoApi\\KinoApi.csproj",
         "packagesPath": "C:\\Users\\Kewin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kewin\\Source\\Repos\\KinoApi\\KinoApi\\obj\\",
+        "outputPath": "C:\\Users\\Kewin\\source\\repos\\KinoApi\\KinoApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\VisualStudioShared\\NuGetPackages"
@@ -57,6 +57,10 @@
               "version": "[5.0.17, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.17, )"
             },

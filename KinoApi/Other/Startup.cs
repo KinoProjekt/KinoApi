@@ -1,8 +1,11 @@
 using FluentValidation.AspNetCore;
+using KinoApi.Entities;
 using KinoApi.Middleware;
+using KinoApi.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -31,12 +34,15 @@ namespace KinoApi.Other
             services.AddSwaggerGen();
             services.AddScoped<CinemaSeeder>();
             services.AddScoped<ErrorHandlingMiddleware>();
-            //services.AddScoped<ICinemaService, CinemaService>();
+            services.AddDbContext<CinemaDbContext>
+               (options => options.UseSqlServer(Configuration.GetConnectionString("CinemaDbConnection")));
+            services.AddScoped<ICinemaService, CinemaService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, CinemaSeeder seeder)
         {
+            seeder.Seed();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -59,7 +65,7 @@ namespace KinoApi.Other
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
         }
     }
